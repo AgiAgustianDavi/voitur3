@@ -1,0 +1,930 @@
+/* default css  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Monomaniac One', sans-serif;
+}
+
+/* Selector universal (*) mengatur margin dan padding ke nol, serta kotak pemodelan ke border-box. Font yang digunakan disetel sebagai Monomaniac One. */
+
+:root {
+    --bg-color: #000000;
+    --second-bg-color: #4C4C4C;
+    --main-color: #7A7A7A;
+    --second-color: #B7AFAC;
+    --text-color: #F7F5F6;
+}
+
+/* Deklarasi variabel akar (:root) untuk warna latar belakang, 
+warna latar belakang sekunder, warna utama, warna sekunder, dan warna teks. 
+Variabel ini akan digunakan di seluruh stylesheet. */
+
+body {
+    background: var(--bg-color);
+}
+
+/* Mengatur latar belakang halaman (body) dengan warna latar belakang yang diambil dari variabel akar (--bg-color), sehingga memberikan tampilan latar belakang hitam. */
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+/* bagian navbar  */
+/* Menghilangkan underlining dan mengatur warna teks pada hyperlink (anchor) dan hyperlink yang sedang di-hover */
+a,
+a:hover {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+/* Menghilangkan poin daftar (bullet points) dari daftar tak terurut (unordered list) */
+ul {
+    list-style: none;
+}
+
+/* Mengatur elemen daftar (list item) menjadi inline-block, sehingga elemen daftar (list item) akan tampil secara horizontal */
+li {
+    display: inline-block;
+}
+
+/* Mengatur tampilan header (bagian atas halaman) */
+.header {
+    width: 100%;
+    height: 70px;
+    /* Komentar ini menjelaskan bahwa warna latar belakang (background-color) header seharusnya menggunakan variabel akar (--bg-color) yang mungkin di-comment (non-aktif). */
+}
+
+/* Mengatur tampilan elemen dengan kelas "nav-bar" dalam header */
+.header .nav-bar {
+    width: 90%;
+    height: 50px;
+    margin: auto;
+    color: var(--text-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+
+/* Mengatur tampilan logo */
+.header .nav-bar .logo {
+    margin-left: 0;
+}
+
+/* Mengatur tampilan teks dalam logo */
+.header .nav-bar .logo a {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* Mengatur tampilan elemen daftar (list item) dalam menu */
+.header .nav-bar .menu ul li {
+    margin-right: 30px;
+}
+
+/* Mengatur tampilan teks dalam elemen daftar (list item) yang merupakan hyperlink (anchor) */
+.header .nav-bar .menu ul li a {
+    font-size: 15px;
+    letter-spacing: 2px;
+    padding: 10px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    transition: all .5s;
+    opacity: 0.6;
+}
+
+/* Mengatur tampilan teks dalam elemen daftar (list item) hyperlink (anchor) yang aktif (sedang dilihat) */
+.header .nav-bar .menu ul li a.active {
+    opacity: 1;
+    text-shadow: 0 0 1rem var(--text-color);
+    font-size: 20px;
+}
+
+/* Mengatur tampilan teks dalam elemen daftar (list item) hyperlink (anchor) saat di-hover (cursor di atasnya) */
+.header .nav-bar .menu ul li a:hover {
+    opacity: 1;
+}
+
+/* Mengatur tampilan elemen dropdown saat mengandung submenu */
+.header .nav-bar .menu ul li .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Mengatur tampilan submenu dropdown */
+.header .nav-bar .menu ul li .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Mengatur tampilan submenu dropdown saat elemen utama di-hover */
+.header .nav-bar .menu ul li.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Mengatur tampilan teks dalam submenu dropdown */
+.header .nav-bar .menu ul li .dropdown-content a {
+    color: var(--text-color);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+/* Mengatur tampilan teks dalam submenu dropdown saat di-hover */
+.header .nav-bar .menu ul li .dropdown-content a:hover {
+    background-color: rgba(255,255,255,0.5);
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* slider-home*/
+
+/* Mengatur tampilan kontainer slider */
+.container-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 82.3vh;
+    position: relative;
+}
+
+/* Mengatur tampilan teks dalam kontainer slider */
+.container-slider .text {
+    position: absolute;
+    color: var(--text-color);
+    z-index: 2;
+    font-size: 50px;
+}
+
+/* Animasi teks dalam kontainer slider */
+.container-slider .text span {
+    animation: glow 5s ease-in-out infinite;
+}
+
+/* Animasi keberkilauan teks */
+@keyframes glow {
+    /* Aturan untuk animasi ini */
+    0%,
+    100% {
+        color: var(--text-color);
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        opacity: 0.7;
+    }
+
+    50%,
+    50% {
+        color: transparent;
+        text-shadow: none;
+    }
+}
+
+/* mengatur animasi untuk teks */
+.container-slider .text span:nth-child(1) {
+    animation-delay: 1s;
+}
+
+.container-slider .text span:nth-child(2) {
+    animation-delay: 2s;
+}
+
+.container-slider .text span:nth-child(3) {
+    animation-delay: 3s;
+}
+
+/* Mengatur tampilan slider */
+.slider {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    width: 800px;
+    height: 430px;
+    background: var(--bg-color);
+    transition: 0.25s;
+}
+
+/* Mengtur gambar untuk slider */
+.box.one {
+    --img: url("../assets/ferrari1.jpg");
+}
+
+.box.two {
+    --img: url("../assets/mclaren1.jpg");
+}
+
+
+.box.three {
+    --img: url("../assets/aston_martin1.jpg");
+}
+
+.box.four {
+    --img: url("../assets/lamborghini1.jpg");
+}
+
+.box.five {
+    --img: url("../assets/tesla1.jpg");
+}
+
+/* Mengatur tampilan kotak dalam slider */
+.slider .box {
+    position: relative;
+    background: var(--img);
+    background-position: center;
+    background-size: cover;
+    transition: 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: grayscale(0) brightness(1);
+}
+
+/* Mengatur tampilan kotak dalam slider saat slider di-hover */
+.slider:hover .box {
+    filter: grayscale(1);
+}
+
+/* Mengatur tampilan kotak dalam slider saat kotak di-hover */
+.slider .box:hover {
+    filter: grayscale(0) brightness(1.25);
+}
+
+/* Aturan grid-template-columns untuk slider saat masing-masing kotak di-hover */
+.slider:has(.one:hover) {
+    grid-template-columns: 2fr 0.5fr 0.5fr 0.5fr 0.5fr;
+}
+
+.slider:has(.two:hover) {
+    grid-template-columns: 0.5fr 2fr 0.5fr 0.5fr 0.5fr;
+}
+
+.slider:has(.three:hover) {
+    grid-template-columns: 0.5fr 0.5fr 2fr 0.5fr 0.5fr;
+}
+
+.slider:has(.four:hover) {
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 2fr 0.5fr;
+}
+
+.slider:has(.five:hover) {
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 2fr;
+}
+
+/* Mengatur tampilan kotak dalam slider sebelumnya */
+.slider .box::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: -1px;
+    height: calc(100% + 2px);
+    background: linear-gradient(#000, transparent, transparent, transparent, #000);
+}
+
+/* Aturan yang mengubah tampilan kotak berdasarkan urutan (genap/ganjil) dalam slider */
+.slider .box:nth-child(even) {
+    transform: translateY(30px);
+}
+
+/* Aturan yang mengubah tampilan kotak berdasarkan urutan (genap/ganjil) dalam slider */
+.slider .box:nth-child(odd) {
+    transform: translateY(-30px);
+}
+
+/* Mengatur tampilan teks dalam kotak saat di-hover */
+.slider .box::after {
+    content: attr(data-text);
+    position: absolute;
+    bottom: 1px;
+    background: var(--text-color);
+    border-radius: 50px;
+    color: var(--bg-color);
+    font-size: 1em;
+    font-weight: 600;
+    padding: 5px 10px;
+    white-space: nowrap;
+    transition: 0.5s;
+    letter-spacing: 0.3em;
+    opacity: 0;
+    transition-delay: 0s;
+    -webkit-box-reflect: below 2px linear-gradient(transparent, #0003);
+}
+
+/* Mengatur tampilan teks dalam kotak saat di-hover */
+.slider .box:hover::after {
+    opacity: 1;
+    bottom: 7px;
+    transition-delay: 0.25s;
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* about  */
+/* Mengatur tampilan heading (judul) */
+.heading {
+    text-align: center;
+    margin: 20px auto;
+}
+
+/* Mengatur tampilan gambar dalam kontainer konten */
+.container-content img {
+    filter: brightness(0.4);
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+/* Pseudoelemen before untuk kontainer konten */
+.container-content::before {
+    content: '';
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    height: 130%;
+    background: linear-gradient(#000000, transparent, transparent, transparent, #000000);
+}
+
+/* Mengatur tampilan judul h1 dalam kontainer konten */
+.container-content h1 {
+    font-size: 50px;
+    color: var(--text-color);
+    margin-bottom: 25px;
+    position: relative;
+    text-align: center;
+}
+
+/* Mengatur tampilan h2 dalam kontainer konten */
+.container-content h2 {
+    margin-left: 10%;
+    font-size: 30px;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+/* Mengatur tampilan teks paragraf dalam kontainer konten */
+.container-content p {
+    margin-left: 12%;
+    margin-right: 12%;
+    font-size: 25px;
+    color: var(--text-color);
+    text-align: justify;
+    font-weight: 100;
+    font-style: normal;
+}
+
+/* Mengatur tampilan header "Us" */
+.header-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Mengatur tampilan judul h1 dalam header "Us" */
+.header-us h1 {
+    font-size: 50px;
+    color: var(--text-color);
+    margin-bottom: 50px;
+}
+
+/* Mengatur tampilan kontainer "Us" */
+.container-us {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* Mengatur tampilan kotak dalam kontainer "Us" */
+.container-us .box {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+/* Mengatur tampilan gambar mahasiswa (imgmhs) dalam kotak */
+.container-us .box .imgmhs {
+    position: absolute;
+    inset: 0;
+    border-radius: 12px;
+    border: 4px solid rgba(0, 0, 0, 0.2);
+}
+
+/* Mengatur tampilan gambar dalam kotak mahasiswa */
+.container-us .box .imgmhs img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+/* Efek gambar mahasiswa saat kotak di-hover */
+.container-us .box:hover .imgmhs img {
+    opacity: 0.5;
+}
+
+/* Mengatur tampilan lapisan "glass" dalam kotak */
+.container-us .box .glass {
+    position: absolute;
+    inset: 0;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    scale: 0;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+/* Mengatur warna latar belakang "glass" berdasarkan ID */
+.container-us .box #satu {
+    background: linear-gradient(rgba(4, 86, 239, 0.995), transparent);
+}
+.container-us .box #dua {
+    background: linear-gradient(rgba(239, 149, 4, 0.995),transparent);
+}
+.container-us .box #tiga {
+    background: linear-gradient(rgba(239, 4, 149, 0.995),transparent);
+}
+.container-us .box #empat {
+    background: linear-gradient(rgba(4, 239, 35, 0.995),transparent);
+}
+.container-us .box #lima {
+    background: linear-gradient(rgba(4, 239, 208, 0.995),transparent);
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* cars  */
+/* Menghilangkan tampilan radio button (karena display: none) */
+.radio {
+	display: none;
+}
+
+/* Mengatur tampilan kontainer slider dan posisinya */
+.slide-container {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	min-height: 80vh;
+}
+
+/* Mengatur tampilan kontainer slider */
+.slider {
+	position: absolute;
+	width: 900px;
+	top: 3%;
+	height: 440px;
+	overflow: hidden;
+	border: 1px solid var(--text-color);
+	border-radius: 30px;
+	box-shadow: 0 0 10px var(--text-color);
+}
+
+/* Mengatur tampilan elemen slide dalam slider */
+.slide {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	opacity: 0;
+}
+
+/* Mengatur tampilan gambar dalam elemen slide */
+.slide img {
+	width: 100%;
+	height:100%;
+	object-fit: cover;
+	transform: scale(1.1);
+	transition: 1.3s;
+}
+
+/* Mengatur tampilan keterangan (caption) dalam elemen slide */
+.caption {
+	position: absolute;
+	width: 100%;
+	color: var(--text-color);
+	font-weight: 600;
+	font-size: 30px;
+	letter-spacing: 8px;
+	top: 5%;
+	left: 5%;
+	text-shadow: 0 0 3px var(--bg-color);
+}
+
+/* Mengatur tampilan detail dalam elemen slide */
+.details {
+	position: absolute;
+	width: auto;
+	bottom: 5%;
+	right: 3%;
+	display: flex;
+	justify-content: right;
+	padding: 5px;
+	text-align: center;
+}
+
+/* Efek tampilan latar belakang untuk detail slide */
+.details::before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: calc(100% + 2px);
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.2),rgba(200,200,200,0.2),rgba(255,255,255,0.2),rgba(200,200,200,0.2), rgba(0, 0, 0, 0.2));
+	border: 0.5px solid var(--text-color);
+	border-radius: 25px;
+}
+
+/* Mengatur tampilan teks dalam detail slide */
+.details div {
+	padding: 5px;
+	font-size: 10px;
+	color: var(--text-color);
+	text-shadow: 0 0 2px var(--bg-color);
+}
+
+/* Mengatur tampilan teks detail spesifik dalam elemen slide */
+details span {
+	display: block;
+	padding: 5px;
+	font-size: 15px;
+	letter-spacing: 2px;
+}
+
+/* Mengatur tampilan indikator titik (dots) */
+.dots {
+	width: 100%;
+	position: absolute;
+	bottom: 5%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Mengatur tampilan label untuk titik */
+.dots label {
+	width: 15px;
+	height: 15px;
+	background-color: white;
+	border: 1px solid #f9f9f9;
+	margin: 0 10px;
+	border-radius: 50%;
+	opacity: 0.3;
+	cursor: pointer;
+	transition: 0.2s ease-in-out;
+}
+
+/* Efek hover untuk label titik */
+.dots label:hover {
+	opacity: 0.7;
+}
+
+/* Mengatur tampilan panah (arrow) */
+.arrow {
+	position: absolute;
+	top: 50%;
+	width: 28px;
+	height: 38px;
+	margin-top: -19px;
+	display: none;
+	opacity: 0.6;
+	cursor: pointer;
+	z-index: 1000;
+	background:transparent url("../assets/arrow.png") no-repeat;
+	transition: opacity linear 0.3s;
+}
+
+/* Efek hover untuk panah */
+.arrow:hover {
+	opacity: 1;
+}
+
+/* Efek klik untuk panah */
+.arrow:active {
+	margin-top: -18px;
+}
+
+/* Mengatur tampilan slide yang aktif berdasarkan tampilan radio button terpilih */
+#radio-1:checked ~ #slide-1,
+#radio-2:checked ~ #slide-2,
+#radio-3:checked ~ #slide-3,
+#radio-4:checked ~ #slide-4 {
+	opacity: 1;
+}
+
+/* Mengatur tampilan gambar slide yang aktif */
+#radio-1:checked~#slide-1 img,
+#radio-2:checked~#slide-2 img,
+#radio-3:checked~#slide-3 img,
+#radio-4:checked~#slide-4 img {
+	transform: scale(1);
+}
+
+/* Mengatur tampilan keterangan (caption) slide yang aktif */
+#radio-1:checked ~ #slide-1 .caption,
+#radio-2:checked ~ #slide-2 .caption,
+#radio-3:checked ~ #slide-3 .caption,
+#radio-4:checked ~ #slide-4 .caption {
+	opacity: 1;
+}
+
+/* Mengatur tampilan detail slide yang aktif */
+#radio-1:checked ~ #slide-1 .details,
+#radio-2:checked ~ #slide-2 .details,
+#radio-3:checked ~ #slide-3 .details,
+#radio-4:checked ~ #slide-4 .details {
+	opacity: 1;
+}
+
+/* Mengatur tampilan label titik yang aktif */
+#radio-1:checked ~ .dots #label-1,
+#radio-2:checked ~ .dots #label-2,
+#radio-3:checked ~ .dots #label-3,
+#radio-4:checked ~ .dots #label-4 {
+	background-color: black;
+	opacity: 1;
+}
+
+/* Mengatur tampilan panah (arrow) untuk slide yang aktif */
+#radio-1:checked~#arrow-2,
+#radio-2:checked~#arrow-3,
+#radio-3:checked~#arrow-4 {
+    right: 15px;
+    display: block;
+    background-position: top right;
+}
+
+#radio-2:checked~#arrow-1,
+#radio-3:checked~#arrow-2,
+#radio-4:checked~#arrow-3 {
+    left: 15px;
+    display: block;
+    background-position: top left;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* news  */
+/* Mengatur tampilan kontainer untuk lebih tahu lebih banyak (know more) */
+.container-know-more {
+    position: relative;
+    width: 100%;
+    min-height: auto;
+    overflow: hidden;
+    /* display: grid; */
+    /* grid-template-columns: 1fr; */
+    /* align-items: center; */
+    /* margin-top: 8px; */
+}
+
+/* Mengatur tampilan elemen topik populer (hot-topic) */
+.hot-topic {
+    overflow: hidden;
+    position: relative;
+    width: 1227px; /* Mungkin perlu diperbaiki nilai 'sspx' yang tidak valid */
+    height: 300px;
+    margin: 12px;
+    border: 2px solid var(--text-color);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Mengatur tampilan gambar dalam elemen topik populer */
+.hot-topic img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Mengatur tampilan konten dalam elemen topik populer */
+.hot-topic-content {
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    line-height: 1.3;
+    color: var(--text-color);
+}
+
+/* Mengatur tampilan judul h2 dalam elemen topik populer */
+.hot-topic h2 {
+    padding: 10px 0;
+    font-size: 18px;
+    text-shadow: 0 0 2px #000;
+}
+
+/* Mengatur tampilan judul h3 dalam elemen topik populer */
+.hot-topic h3 {
+    padding: 10px 0;
+    font-size: 16px;
+    text-shadow: 0 0 2px #000;
+}
+
+/* Mengatur tampilan paragraf dalam elemen topik populer */
+.hot-topic p {
+    padding: 10px 0;
+    font-size: 15px;
+    text-shadow: 0 0 2px #000;
+    padding: 12px 10px;
+}
+
+/* Mengatur tampilan tautan (link) dalam elemen topik populer */
+.hot-topic-content a {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 1px solid var(--text-color);
+    width: 95px;
+    border-radius: 2px;
+    text-align: center;
+    padding: 7px 10px;
+    font-size: 14px;
+    margin: 10px 0 10px 10px;
+}
+
+/* Efek hover untuk tautan dalam elemen topik populer */
+.hot-topic-content a:hover {
+    box-shadow: 0 0 1rem var(--text-color);
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* kontak  */
+/* Mengatur tampilan kontainer kontak */
+.container-kontak {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 75vh;
+    background-color: rgba(0,0,0,0.5);
+    border-top: 2px solid var(--text-color);
+    border-bottom: 2px solid var(--text-color);
+    filter: brightness(0.7);
+}
+
+/* Mengatur tampilan kontainer formulir */
+.form-container {
+    position: relative;
+    width: 431px;
+    height: 400px;
+    background: none;
+    /* border: 2px solid var(--text-color); */
+    /* border-radius: 20px; */
+    /* backdrop-filter: blur(1.5px); */
+}
+
+/* Mengatur tampilan judul h1 dalam kontainer formulir */
+.form-container h1 {
+    font-size: 24px;
+    text-align: left;
+    padding: 0 10px;
+    color: var(--text-color);
+    letter-spacing: 5px;
+}
+
+/* Mengatur tampilan paragraf dalam kontainer formulir */
+.form-container p {
+    font-size: 14px;
+    text-align: left;
+    padding: 0 10px;
+    color: var(--text-color);
+    font-weight: 100;
+    font-style: italic;
+}
+
+/* Mengatur tampilan elemen input dalam kotak input */
+.input-field {
+    position: relative;
+    width: 500px;
+    margin: 13.5px;
+    /* background-color: #000000; */
+}
+
+/* Mengatur tampilan input dan label dalam elemen input */
+.input-field input, textarea {
+    width: 400px;
+    padding: 10px;
+    border: 1px solid rgba(255,255,255,0.25);
+    background: rgba(255,255,255,0.1);
+    border-radius: 5px;
+    outline: none;
+    color: var(--text-color);
+    font-size: 15px;
+    transition: 0.5s;
+}
+
+.input-field label {
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 15px;
+    color: rgba(255,255,255,0.7);
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+/* Efek transisi pada input dan label ketika mendapat fokus atau isi valid */
+.input-field input:valid ~ label, textarea:valid ~ label,
+.input-field input:focus ~ label, textarea:focus ~ label
+{
+    color: var(--text-color);
+    transform: translateX(10px) translateY(-7px);
+    font-size: 12px;
+    padding: 0 10px;
+    background: var(--second-bg-color);
+    border-radius: 5px;
+    letter-spacing: 0.8px;
+}
+
+/* Efek transisi pada input dan label ketika mendapat fokus */
+.input-field input:valid, textarea:valid,
+.input-field input:focus, textarea:focus
+{
+    border: 1px solid var(--text-color);
+    box-shadow: 0 0 1rem var(--text-color);
+}
+
+/* Mengatur tampilan tombol submit */
+.submit-button {
+    text-align: center;
+}
+
+.submit-button input {
+    font-size: 15px;
+    background: transparent;
+    color: var(--text-color);
+    padding: 1px 10px;
+    border: 1px solid var(--text-color);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+/* Efek hover pada tombol submit */
+.submit-button input:hover {
+    background: var(--text-color);
+    color: var(--bg-color);
+    box-shadow: 0 0 1rem var(--text-color);
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* footer  */
+/* Mengatur tampilan footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 25px;
+    background: rgba(255,255,255,0.8);
+}
+
+/* Mengatur tampilan teks dalam elemen dengan kelas "footer-text" */
+.footer-text p {
+    font-size: 15px;
+    color: var(--bg-color);
+}
+
+/* Mengatur tampilan ikon sosial media pada footer */
+.footer-iconTop a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1px;
+    background: var(--bg-color);
+    border-radius: .8rem;
+    transition: .5s ease;
+}
+
+/* Efek hover untuk ikon sosial media */
+.footer-iconTop a:hover {
+    box-shadow: 0 0 1rem var(--bg-color);
+}
+
+/* Mengatur tampilan ikon dalam elemen dengan kelas "footer-iconTop" */
+.footer-iconTop a i {
+    font-size: 25px;
+    color: var(--text-color);
+}
+
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */

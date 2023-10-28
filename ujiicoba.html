@@ -1,0 +1,471 @@
+<!DOCTYPE html> <!-- Deklarasi jenis dokumen HTML -->
+<html lang="en"> <!-- Mulai elemen HTML dengan atribut bahasa Inggris -->
+
+<head>
+    <meta charset="UTF-8"> <!-- Set karakter encoding ke UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Pengaturan viewport untuk tampilan perangkat bergerak -->
+    <title>Document</title> <!-- Judul dokumen, dapat diubah sesuai kebutuhan -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Menghubungkan file stylesheet eksternal -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Permintaan awal koneksi ke server font Google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Permintaan awal koneksi ke server font Google dengan CORS -->
+    <link href="https://fonts.googleapis.com/css2?family=Monomaniac+One&display=swap" rel="stylesheet"> <!-- Menghubungkan file CSS font Google -->
+</head>
+
+<body>
+    <section class="header" id="header"> <!-- Bagian header dokumen -->
+        <div class="nav-bar"> <!-- Container untuk navigasi -->
+            <div class="logo">
+                <a href="#">Voitur3</a> <!-- Logo dengan teks dan tautan -->
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li> <!-- Tautan ke halaman beranda -->
+                    <li><a href="aboutUs1.html">About Us</a></li> <!-- Tautan ke halaman "About Us" -->
+                    <li class="dropdown">
+                        <a href="#">Cars</a> <!-- Tautan ke halaman "Cars" dengan dropdown menu -->
+                        <div class="dropdown-content"> <!-- Isi dropdown menu -->
+                            <a href="cars-ferarri.html" target="_self">Ferrari</a> <!-- Tautan ke halaman "Ferrari" -->
+                            <a href="cars-mclaren.html" target="_self">McLaren</a> <!-- Tautan ke halaman "McLaren" -->
+                            <a href="cars-astonmartin.html" target="_self">Aston Martin</a> <!-- Tautan ke halaman "Aston Martin" -->
+                            <a href="cars-lamborghini.html" target="_self">Lamborghini</a> <!-- Tautan ke halaman "Lamborghini" -->
+                            <a href="cars-tesla.html" target="_self">Tesla</a> <!-- Tautan ke halaman "Tesla" -->
+                        </div>
+                    </li>
+                    <li><a href="news.html">Automotive News</a></li> <!-- Tautan ke halaman "Automotive News" -->
+                    <li><a href="kontak.html">Contact Us</a></li> <!-- Tautan ke halaman "Contact Us" -->
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-slider"> <!-- Bagian container untuk slider -->
+        <div class="text"> <!--teks beranimasi -->
+            <span>fast</span>
+            <span>&</span>
+            <span>luxurious</span>
+        </div>
+        <div class="slider"> <!-- Slider gambar mobil -->
+            <a href="cars-ferarri.html" class="box one" data-text="Ferarri"></a> <!-- Gambar mobil Ferrari dengan tautan -->
+            <a href="cars-mclaren.html" class="box two" data-text="McLaren"></a> <!-- Gambar mobil McLaren dengan tautan -->
+            <a href="cars-astonmartin.html" class="box three" data-text="Aston Martin"></a> <!-- Gambar mobil Aston Martin dengan tautan -->
+            <a href="cars-lamborghini.html" class="box four" data-text="Lamborghini"></a> <!-- Gambar mobil Lamborghini dengan tautan -->
+            <a href="cars-tesla.html" class="box five" data-text="Tesla"></a> <!-- Gambar mobil Tesla dengan tautan -->
+        </div>
+    </section>
+</body>
+
+</html>
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- about us -->
+<!DOCTYPE html> <!-- Deklarasi jenis dokumen HTML -->
+<html>
+
+<head>
+    <meta charset="UTF-8"> <!-- Set karakter encoding ke UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Pengaturan viewport untuk tampilan perangkat bergerak -->
+    <title>Document</title> <!-- Judul dokumen, dapat diubah sesuai kebutuhan -->
+    <link rel="stylesheet" href="css/styleAbout1.css"> <!-- Menghubungkan file stylesheet eksternal -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Permintaan awal koneksi ke server font Google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Permintaan awal koneksi ke server font Google dengan CORS -->
+    <link href="https://fonts.googleapis.com/css2?family=Monomaniac+One&display=swap" rel="stylesheet"> <!-- Menghubungkan file CSS font Google -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!-- Menghubungkan file CSS ikon dari Boxicons -->
+</head>
+
+<body>
+    <section class="header" id="header"> <!-- Bagian header dokumen -->
+        <div class="nav-bar">
+            <div class="logo">
+                <a href="#">Voitur3</a> <!-- Logo dengan teks dan tautan -->
+            </div>
+            <div class="menu" id="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li> <!-- Tautan ke halaman beranda -->
+                    <li><a href="#" class="active">About Us</a></li> <!-- Tautan ke halaman "About Us" dengan penanda aktif -->
+                    <li class="dropdown">
+                        <a href="#">Cars</a> <!-- Tautan ke halaman "Cars" dengan dropdown menu -->
+                        <div class="dropdown-content"> <!-- Isi dropdown menu -->
+                            <a href="cars-ferarri.html" target="_self">Ferrari</a> <!-- Tautan ke halaman "Ferrari" -->
+                            <a href="cars-mclaren.html" target="_self">McLaren</a> <!-- Tautan ke halaman "McLaren" -->
+                            <a href="cars-astonmartin.html" target="_self">Aston Martin</a> <!-- Tautan ke halaman "Aston Martin" -->
+                            <a href="cars-lamborghini.html" target="_self">Lamborghini</a> <!-- Tautan ke halaman "Lamborghini" -->
+                            <a href="cars-tesla.html" target="_self">Tesla</a> <!-- Tautan ke halaman "Tesla" -->
+                        </div>
+                    </li>
+                    <li><a href="news.html">Automotive News</a></li> <!-- Tautan ke halaman "Automotive News" -->
+                    <li><a href="kontak.html">Contact Us</a></li> <!-- Tautan ke halaman "Contact Us" -->
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-content"> <!-- Bagian container untuk konten -->
+        <img src="assets/Mobil.jpg"> <!-- Gambar -->
+        <h1>About Us</h1> <!-- Judul halaman "About Us" -->
+        <h2>Tentang Kami</h2> <!-- Subjudul "Tentang Kami" -->
+        <p><!-- Sekumpulan paragraf yang menjelaskan tentang, misi, mobil mewah, dan tujuan situs web -->
+            Selamat datang di Voitur3! Kami adalah sebuah tim dari sekelompok mahasiswa yang terinspirasi oleh
+            keindahan dan teknologi yang disediakan oleh perusahaan-perusahaan otomotif yang di tuangkan pada
+            mobil - mobil yang dikeluarkannya. Situs web ini adalah hasil upaya kami untuk menyajikan informasi
+            tentang mobil mewah yang diproduksi oleh perusahaan otomotif ternama di dunia. Kami berupaya untuk
+            menghadirkan pengalaman luar bisa dalam menjelajahi proyek website kami yang informatif dan
+            inovatif.
+        </p>
+        <br>
+        <h2>Misi kami</h2>
+        <p>
+            Misi kami sudah jelas dan sederhana, yaitu kami ingin menghargai dan memahami beraneka ragam mobil
+            mewah dari berbagai sudut pandang. Kami meyakini bahwa orang orang memiliki potensi untuk menghargai
+            dan memahami kelebihan dan keindahan dari jenis mobil yang dikeluarkan oleh perusahaan otomotif
+            ternama tersebut.
+        </p>
+        <br>
+        <h2>Berbagai mobil mewah</h2>
+        <p>
+            Pada website ini kami mencakup beberapa jenis mobil mewah yang diproduksi oleh perusahaan otomotif
+            ternama didunia, seperti Ferrary, Lamborghini dan lainnya. Dalam website ini, anda akan menemukan
+            informasi tentang beberapa jenis dan model mobil yang kami pilih.
+        </p>
+        <br>
+        <h2>Tujuan kami</h2>
+        <p>
+            Tujuan kami adalah memberikan informasi yang bersifat inspirasi dan informatif. Kami ingin membantu
+            anda memahami alasan mengapa hal ini di anggap sebagai pencapaian yang luar biasa dalam dunia
+            otomotif.
+            Kami ingin berterima kasih kepada semua pembaca yang telah mendukung kami dalam pengembangan situs
+            web ini. Dukungan anda semua terhadap situs web ini sangat berarti bagi kami agar kami tetap
+            semangat dalam untuk terus melakukan update agar website ini akan menampilkan lebih banyak lagi
+            informasi informasi dalam dunia otomotif.
+            Terimakasih atas kunjungan anda, kami harap anda menemukan informasi yang informatif dan inspiratif
+            dalam setiap halaman website kami.</p>
+        <br>
+    </section>
+    <br><br><br>
+
+    <section class="header-us">
+        <h1>TEAM 3</h1> <!-- Judul "TEAM 3" -->
+    </section>
+
+    <section class="container-us"> <!-- Bagian container untuk informasi tim -->
+        <div class="box">
+            <div class="imgmhs"><img src="assets/agi.jpg"></div><!-- Elemen gambar profil Agi -->
+            <div class="glass" id="satu"><!-- Elemen dengan kelas "glass" dan id "satu" -->
+                <h3>Agi<br><span>01</span></h3><!-- nama -->
+                <ul>
+                    <!-- Daftar yang berisi tautan sosial media dan email -->
+                    <a href="http://Instagram.com/agidavi_8"><i class='bx bxl-instagram'></i></a>
+                    <!-- Tautan ke profil Instagram -->
+                    <a href="http://wa.me/6281273837529"><i class='bx bxl-whatsapp'></i></a>
+                    <!-- Tautan ke nomor WhatsApp -->
+                    <a href="mailto:agidavi6@gmail.com"><i class='bx bx-envelope'></i></a>
+                    <!-- Tautan ke alamat email -->
+                </ul>
+            </div>
+        </div>        
+
+        <div class="box">
+            <div class="imgmhs"><img src="assets/anang.jpg"></div>
+            <div class="glass" id="dua">
+                <h3>Anang<br><span>02</span></h3>
+                <ul>
+                    <a href="http://Instagram.com/a.byan12"><i class='bx bxl-instagram'></i></a>
+                    <a href="http://wa.me/6283171699572"><i class='bx bxl-whatsapp'></i></a>
+                    <a href="mailto:anangabiansyah12@gmail.com" ><i class='bx bx-envelope'></i></a>
+                </ul>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="imgmhs"><img src="assets/audrey.jpg"></div>
+            <div class="glass" id="tiga">
+                <h3>Audrey<br><span>03</span></h3>
+                <ul>
+                    <a href="http://Instagram.com/audreyy.rhmi"><i class='bx bxl-instagram'></i></a>
+                    <a href="http://wa.me/62895411202119" ><i class='bx bxl-whatsapp'></i></a>
+                    <a href="mailto:audreyresturahmi@gmail.com" ><i class='bx bx-envelope'></i></a>
+                </ul>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="imgmhs"><img src="assets/herlia.jpg"></div>
+            <div class="glass" id="empat">
+                <h3>Herlia<br><span>04</span></h3>
+                <ul>
+                    <a href="http://Instagram.com/hsbilaaa"><i class='bx bxl-instagram'></i></a>
+                    <a href="http://wa.me/6289628998204" ><i class='bx bxl-whatsapp'></i></a>
+                    <a href="mailto:salsabilaherliaadella@gmail.com" ><i class='bx bx-envelope'></i></a>
+                </ul>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="imgmhs"><img src="assets/rafly.jpg"></div>
+            <div class="glass" id="lima">
+                <h3>Rafly<br><span>05</span></h3>
+                <ul>
+                    <a href="http://Instagram.com/rafly_prdnaa"><i class='bx bxl-instagram'></i></a>
+                    <a href="http://wa.me/6281358221706"><i class='bx bxl-whatsapp'></i></a>
+                    <a href="mailto:rflyputraraf@gmail.com"><i class='bx bx-envelope'></i></a>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <br><br><br>
+
+    <footer class="footer"> <!-- Bagian footer dokumen -->
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 by Voitur3 | All Rights Reserved.</p> <!-- Teks hak cipta -->
+        </div>
+        <div class="footer-iconTop">
+            <a href="#menu"><i class='bx bx-up-arrow-alt'></i></a> <!-- Tautan kembali ke atas dengan ikon panah -->
+        </div>
+    </footer>
+</body>
+
+</html>
+
+<!-- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- automotive news -->
+<!DOCTYPE html> <!-- Deklarasi jenis dokumen HTML -->
+<html>
+
+<head>
+    <meta charset="UTF-8"> <!-- Set karakter encoding ke UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Pengaturan viewport untuk tampilan perangkat bergerak -->
+    <title>Document</title> <!-- Judul dokumen, dapat diubah sesuai kebutuhan -->
+    <link rel="stylesheet" href="css/styleNews.css"> <!-- Menghubungkan file stylesheet eksternal -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Permintaan awal koneksi ke server font Google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Permintaan awal koneksi ke server font Google dengan CORS -->
+    <link href="https://fonts.googleapis.com/css2?family=Monomaniac+One&display=swap" rel="stylesheet"> <!-- Menghubungkan file CSS font Google -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!-- Menghubungkan file CSS ikon dari Boxicons -->
+</head>
+
+<body>
+    <section class="header" id="header"> <!-- Bagian header dokumen -->
+        <div class="nav-bar">
+            <div class="logo">
+                <a href="#">Voitur3</a> <!-- Logo dengan teks dan tautan -->
+            </div>
+            <div class="menu" id="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li> <!-- Tautan ke halaman beranda -->
+                    <li><a href="aboutUs1.html">About Us</a></li> <!-- Tautan ke halaman "About Us" -->
+                    <li class="dropdown">
+                        <a href="#">Cars</a> <!-- Tautan ke halaman "Cars" dengan dropdown menu -->
+                        <div class="dropdown-content"> <!-- Isi dropdown menu -->
+                            <!-- Tautan-tautan ke halaman mobil seperti Ferrari, McLaren, Aston Martin, dll. -->
+                        </div>
+                    </li>
+                    <li><a href="#" class="active">Automotive News</a></li> <!-- Tautan ke halaman "Automotive News" dengan penanda aktif -->
+                    <li><a href="kontak.html">Contact Us</a></li> <!-- Tautan ke halaman "Contact Us" -->
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-know-more"> <!-- Bagian container untuk informasi berita otomotif -->
+        <!-- Sekumpulan elemen untuk setiap berita otomotif, termasuk judul, tanggal, gambar, dan tautan -->
+    </section>
+    <br><br><br>
+
+    <footer class="footer"> <!-- Bagian footer dokumen -->
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 by Voitur3 | All Rights Reserved.</p> <!-- Teks hak cipta -->
+        </div>
+        <div class="footer-iconTop">
+            <a href="#menu"><i class='bx bx-up-arrow-alt'></i></a> <!-- Tautan kembali ke atas dengan ikon panah -->
+        </div>
+    </footer>
+</body>
+
+</html>
+
+<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+<!-- kontak -->
+<!DOCTYPE html> <!-- Deklarasi jenis dokumen HTML -->
+<html lang="en"> <!-- Bahasa dokumen diatur ke bahasa Inggris (English) -->
+
+<head>
+    <meta charset="UTF-8"> <!-- Set karakter encoding ke UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Pengaturan viewport untuk tampilan perangkat bergerak -->
+    <title>Document</title> <!-- Judul dokumen, dapat diubah sesuai kebutuhan -->
+    <link rel="stylesheet" href="css/styleKontak.css"> <!-- Menghubungkan file stylesheet eksternal -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Permintaan awal koneksi ke server font Google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Permintaan awal koneksi ke server font Google dengan CORS -->
+    <link href="https://fonts.googleapis.com/css2?family=Monomaniac+One&display=swap" rel="stylesheet"> <!-- Menghubungkan file CSS font Google -->
+</head>
+
+<body>
+    <section class="header" id="header"> <!-- Bagian header dokumen -->
+        <div class="nav-bar">
+            <div class="logo">
+                <a href="#">Voitur3</a> <!-- Logo dengan teks dan tautan -->
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li> <!-- Tautan ke halaman beranda -->
+                    <li><a href="aboutUs1.html">About Us</a></li> <!-- Tautan ke halaman "About Us" -->
+                    <li class="dropdown">
+                        <a href="#">Cars</a> <!-- Tautan ke halaman "Cars" dengan dropdown menu -->
+                        <div class="dropdown-content"> <!-- Isi dropdown menu -->
+                            <!-- Tautan-tautan ke halaman mobil seperti Ferrari, McLaren, Aston Martin, dll. -->
+                        </div>
+                    </li>
+                    <li><a href="news.html">Automotive News</a></li> <!-- Tautan ke halaman "Automotive News" -->
+                    <li><a href="kontak.html" class="active">Contact Us</a></li> <!-- Tautan ke halaman "Contact Us" dengan penanda aktif -->
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-kontak"> <!-- Bagian container untuk halaman kontak -->
+        <div class="form-container">
+            <h1>Contact Us</h1> <!-- Judul halaman kontak -->
+            <p>Hubungi tim kami untuk pertanyaan, saran, atau informasi lebih lanjut.<br>
+                Kami akan berusaha menjawab secepat mungkin.</p> <!-- Teks instruksi kontak -->
+            <form action="#" method="post"> <!-- Formulir kontak dengan metode POST -->
+                <div class="input-field">
+                    <input type="text" name="name" autofocus required> <!-- Input nama dengan tanda wajib diisi -->
+                    <label for="name">Your Name</label> <!-- Label untuk input nama -->
+                </div>
+                <div class="input-field">
+                    <input type="email" name="email" required> <!-- Input email dengan tanda wajib diisi -->
+                    <label for="email">Your Email</label> <!-- Label untuk input email -->
+                </div>
+                <div class="input-field">
+                    <textarea name="message" rows="4" required></textarea> <!-- Input pesan dengan tanda wajib diisi -->
+                    <label for="message">Your Message</label> <!-- Label untuk input pesan -->
+                </div>
+                <div class="submit-button">
+                    <input type="submit" value="submit"> <!-- Tombol kirim formulir -->
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
+
+<!-- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- cars-astonmartin -->
+<!DOCTYPE html> <!-- Deklarasi jenis dokumen HTML -->
+<html lang="en"> <!-- Dokumen dalam bahasa Inggris (English) -->
+
+<head>
+    <meta charset="UTF-8"> <!-- Set karakter encoding ke UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Pengaturan viewport untuk tampilan perangkat bergerak -->
+    <title>Document</title> <!-- Judul dokumen, dapat diubah sesuai kebutuhan -->
+    <link rel="stylesheet" href="css/styleCars.css"> <!-- Menghubungkan file stylesheet eksternal -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Permintaan awal koneksi ke server font Google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Permintaan awal koneksi ke server font Google dengan CORS -->
+    <link href="https://fonts.googleapis.com/css2?family=Monomaniac+One&display=swap" rel="stylesheet"> <!-- Menghubungkan file CSS font Google -->
+</head>
+
+<body>
+    <section class="header" id="header"> <!-- Bagian header dokumen -->
+        <div class="nav-bar">
+            <div class="logo">
+                <a href="#">Voitur3</a> <!-- Logo dengan teks dan tautan -->
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li> <!-- Tautan ke halaman beranda -->
+                    <li><a href="aboutUs1.html">About Us</a></li> <!-- Tautan ke halaman "About Us" -->
+                    <li class="dropdown">
+                        <a href="#" class="active">Cars</a> <!-- Tautan ke halaman "Cars" dengan penanda aktif -->
+                        <div class="dropdown-content">
+                            <!-- Tautan-tautan ke halaman mobil seperti Ferrari, McLaren, Aston Martin, dll. -->
+                        </div>
+                    </li>
+                    <li><a href="news.html">Automotive News</a></li> <!-- Tautan ke halaman "Automotive News" -->
+                    <li><a href="kontak.html">Contact Us</a></li> <!-- Tautan ke halaman "Contact Us" -->
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="slide-container"> <!-- Bagian container untuk tampilan slide mobil -->
+        <div class="slider">
+            <input type="radio" class="radio" name="images" id="radio-1" checked>
+            <!-- Tombol radio untuk elemen pertama (terpilih) -->
+            <input type="radio" class="radio" name="images" id="radio-2">
+            <!-- Tombol radio untuk elemen kedua -->
+            <input type="radio" class="radio" name="images" id="radio-3">
+            <!-- Tombol radio untuk elemen ketiga -->
+            <input type="radio" class="radio" name="images" id="radio-4">
+            <!-- Tombol radio untuk elemen keempat -->
+        
+            <label for="radio-1" class="arrow" id="arrow-1"></label>
+            <!-- Label panah untuk elemen pertama -->
+            <label for="radio-2" class="arrow" id="arrow-2"></label>
+            <!-- Label panah untuk elemen kedua -->
+            <label for="radio-3" class="arrow" id="arrow-3"></label>
+            <!-- Label panah untuk elemen ketiga -->
+            <label for="radio-4" class="arrow" id="arrow-4"></label>
+            <!-- Label panah untuk elemen keempat -->
+        
+            <div class="slide" id="slide-1">
+                <!-- Elemen slider pertama -->
+                <img src="assets/astonmartin-db11.jpg" alt="">
+                <!-- Gambar mobil -->
+                <div class="caption"><span>Aston Martin DB11</span></div>
+                <!-- Judul "Aston Martin DB11" -->
+                <div class="details">
+                    <!-- Informasi detail mobil -->
+                    <div><span>$220086</span>Price</div>
+                    <div><span>322Km/h</span>Max Speed</div>
+                    <div><span>3.8Sec</span>Acceleration</div>
+                    <div><span>528</span>Horsepower</div>
+                </div>
+            </div>
+            <!-- Akhir elemen slider pertama -->
+            <div class="slide" id="slide-2">
+                <img src="assets/astonmartin-dbs-superleggera.jpg" alt="">
+                <div class="caption"><span>Aston Martin DBS Superleggera</span></div>
+                <div class="details">
+                    <div><span>$333686</span>Price</div>
+                    <div><span>340Km/h</span>Max Speed</div>
+                    <div><span>3.4Sec</span>Acceleration</div>
+                    <div><span>715</span>Horsepower</div>
+                </div>
+            </div>
+            <div class="slide" id="slide-3">
+                <img src="assets/astonmartin-valkyrie.jpg" alt="">	
+                <div class="caption"><span>Aston Martin Valkyrie</span></div>
+                <div class="details">
+                    <div><span>$3500000</span>Price</div>
+                    <div><span>402Km/h</span>Max Speed</div>
+                    <div><span>2.5Sec</span>Acceleration</div>
+                    <div><span>1139</span>Horsepower</div>
+                </div>
+            </div>
+            <div class="slide" id="slide-4">
+                <img src="assets/astonmartin-vantage.jpg" alt="">
+                <div class="caption"><span>Aston Martin Vantage</span></div>
+                <div class="details">
+                    <div><span>$146986</span>Price</div>
+                    <div><span>273Km/h</span>Max Speed</div>
+                    <div><span>3.6Sec</span>Acceleration</div>
+                    <div><span>690</span>Horsepower</div>
+                </div>
+            </div>
+        </div>        
+        <div class="dots">
+            <!-- Kontainer untuk tanda navigasi (dots) -->
+            <label for="radio-1" id="label-1"></label>
+            <!-- Tanda navigasi (dots) untuk elemen pertama -->
+            <label for="radio-2" id="label-2"></label>
+            <!-- Tanda navigasi (dots) untuk elemen kedua -->
+            <label for="radio-3" id="label-3"></label>
+            <!-- Tanda navigasi (dots) untuk elemen ketiga -->
+            <label for="radio-4" id="label-4"></label>
+            <!-- Tanda navigasi (dots) untuk elemen keempat -->
+        </div>     
+    </section>
+</body>
+</html>
+
+<!-- -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
+
+

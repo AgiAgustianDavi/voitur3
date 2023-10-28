@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styleKontak.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monomaniac+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section class="header" id="header">
+        <div class="nav-bar">
+            <div class="logo">
+                <a href="#">Voitur3</a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutUs1.html">About Us</a></li>
+                    <li class="dropdown">
+                        <a href="#">Cars</a>
+                        <div class="dropdown-content">
+                            <a href="cars-ferarri.html" target="_self">Ferrari</a>
+                            <a href="cars-mclaren.html" target="_self">McLaren</a>
+                            <a href="cars-astonmartin.html" target="_self">Aston Martin</a>
+                            <a href="cars-lamborghini.html" target="_self">Lamborghini</a>
+                            <a href="cars-tesla.html" target="_self">Tesla</a>
+                        </div>
+                    </li>
+                    <li><a href="news.html">Automotive News</a></li>
+                    <li><a href="kontak.html" class="active">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-kontak">
+
+        <div class="form-container">
+            <h1>Contact Us</h1>
+            <p>Hubungi tim kami untuk pertanyaan, saran, atau informasi lebih lanjut.<br>
+                Kami akan berusaha menjawab secepat mungkin.</p>
+            <form action="#" method="post">
+                <div class="input-field">
+                    <input type="text" name="name" autofocus required>
+                    <label for="name">Your Name</label>
+                </div>
+                <div class="input-field">
+                    <input type="email" name="email" required>
+                    <label for="email">Your Email</label>
+                </div>
+                <div class="input-field">
+                    <textarea name="message" rows="4" required></textarea>
+                    <label for="message">Your Message</label>
+                </div>
+                <div class="submit-button">
+                    <input type="submit" value="submit">
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
