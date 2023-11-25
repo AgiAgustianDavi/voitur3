@@ -1,3 +1,165 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>VOITUR3</title>
+
+    <!-- bootstrap  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- local css  -->
+    <link rel="stylesheet" href="css/styleAbout1.css">
+
+    <!-- font-family  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monomaniac+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- navbar  -->
+    <nav class="navbar navbar-expand-lg bg-transparent sticky-top" data-bs-theme="dark">
+        <div class="container">
+            <a class="navbar-brand p-0 m-0 fs-2 fw-bold" href="#">VOITUR3</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse fw-medium" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item ms-3 me-3">
+                        <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item ms-3 me-3">
+                        <a class="nav-link active" href="aboutUs1.html">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown ms-3 me-3">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Cars
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="cars-ferarri.html" target="_self">Ferrari</a></li>
+                            <li><a class="dropdown-item" href="cars-mclaren.html" target="_self">McLaren</a></li>
+                            <li><a class="dropdown-item" href="cars-astonmartin.html" target="_self">Aston Martin</a>
+                            </li>
+                            <li><a class="dropdown-item" href="cars-lamborghini.html" target="_self">Lamborghini</a>
+                            </li>
+                            <li><a class="dropdown-item" href="cars-tesla.html" target="_self">Tesla</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item ms-3 me-3">
+                        <a class="nav-link" href="news.html">Automotive News</a>
+                    </li>
+                    <li class="nav-item ms-3 me-3">
+                        <a class="nav-link" href="kontak.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end  -->
+
+    <!-- content  -->
+    <section class="container-fluid text-light">
+        <div class="gambar"></div>
+        <div class="row justify-content-center">
+            <h1 class="text-center fw-bold fs-1 mb-5">About Us</h1>
+            <div class="text-center">
+                <button type="button" class="btn btn-outline-light" onclick="toggleText('aboutUs')">Tentang Kami</button>
+                <button type="button" class="btn btn-outline-light" onclick="toggleText('mission')">Misi kami</button>
+                <button type="button" class="btn btn-outline-light" onclick="toggleText('goals')">Tujuan kami</button>
+            </div>
+            <div class="text col-md-6 text-center mt-3 mb-3" id="text"></div>
+        </div>
+    </section>
+    <!-- content end -->
+
+    <!-- team  -->
+    <section class="header-us mt-3">
+        <h1>TEAM 3</h1>
+    </section>
+    <section class="container-us mb-5">
+        <div class="box">
+            <div class="imgmhs"><img src="assets/agi.jpg"></div>
+            <div class="glass" id="satu">
+                <h3>Agi<br><span>01</span></h3>
+                <ul>
+                    <a href="http://Instagram.com/agidavi_8"><i class='bx bxl-instagram'></i></a>
+                    <a href="http://wa.me/6281273837529"><i class='bx bxl-whatsapp'></i></a>
+                    <a href="mailto:agidavi6@gmail.com"><i class='bx bx-envelope'></i></a>
+                </ul>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="imgmhs"><img src="assets/anang.jpg"></div>
+            <div class="glass" id="dua">
+                <h3>Anang<br><span>02</span></h3>
+                <ul>
+                    <a href="http://Instagram.com/a.byan12"><i class='bx bxl-instagram'></i></a>
+                    <a href="http://wa.me/6283171699572"><i class='bx bxl-whatsapp'></i></a>
+                    <a href="mailto:anangabiansyah12@gmail.com"><i class='bx bx-envelope'></i></a>
+                </ul>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="imgmhs"><img src="assets/audrey.jpg"></div>
+            <div class="glass" id="tiga">
+                <h3>Audrey<br><span>03</span></h3>
+                <ul>
+                    <a href="http://Instagram.com/audreyy.rhmi"><i class='bx bxl-instagram'></i></a>
+                    <a href="http://wa.me/62895411202119"><i class='bx bxl-whatsapp'></i></a>
+                    <a href="mailto:audreyresturahmi@gmail.com"><i class='bx bx-envelope'></i></a>
+                </ul>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="imgmhs"><img src="assets/herlia.jpg"></div>
+            <div class="glass" id="empat">
+                <h3>Herlia<br><span>04</span></h3>
+                <ul>
+                    <a href="http://Instagram.com/hsbilaaa"><i class='bx bxl-instagram'></i></a>
+                    <a href="http://wa.me/6289628998204"><i class='bx bxl-whatsapp'></i></a>
+                    <a href="mailto:salsabilaherliaadella@gmail.com"><i class='bx bx-envelope'></i></a>
+                </ul>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="imgmhs"><img src="assets/rafly.jpg"></div>
+            <div class="glass" id="lima">
+                <h3>Rafly<br><span>05</span></h3>
+                <ul>
+                    <a href="http://Instagram.com/rafly_prdnaa"><i class='bx bxl-instagram'></i></a>
+                    <a href="http://wa.me/6281358221706"><i class='bx bxl-whatsapp'></i></a>
+                    <a href="mailto:rflyputraraf@gmail.com"><i class='bx bx-envelope'></i></a>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- team end  -->
+
+    <!-- bootstrap script  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <!-- local js  -->
+    <script src="js/aboutUs.js"></script>
+</body>
+
+</html>
+
+
+
+
+<!-- 
 <!DOCTYPE html>
 <html>
 
@@ -155,4 +317,4 @@
     </footer>
 </body>
 
-</html>
+</html> -->
