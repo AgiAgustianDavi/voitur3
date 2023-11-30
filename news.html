@@ -239,6 +239,28 @@
     <!-- local script  -->
     <script src="js/news.js"></script>
     <script src="js/navbar.js"></script>
+    <script>
+        const buttons = document.querySelectorAll('.btn');
+
+        // Fungsi untuk menangani klik pada tombol
+        function handleButtonClick(event) {
+            // Menambahkan kelas 'visited' ke tombol yang diklik
+            event.target.classList.add('visited');
+        }
+
+        // Menambahkan event listener ke setiap tombol
+        buttons.forEach(button => {
+            button.addEventListener('click', handleButtonClick);
+        });
+
+        // Cek status dikunjungi saat halaman dimuat ulang
+        buttons.forEach(button => {
+            if (button.classList.contains('visited')) {
+                // Mengubah warna tombol jika sudah dikunjungi sebelumnya
+                button.style.backgroundColor = '#212529'; // Ganti dengan warna yang diinginkan
+            }
+        });
+    </script>
 </body>
 
 </html>
