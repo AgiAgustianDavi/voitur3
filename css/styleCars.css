@@ -23,7 +23,7 @@ body {
     justify-content: center;
     align-items: center;
 	width: 100%;
-    min-height: 80vh;
+    min-height: 100vh;
 }
 
 .slider {
@@ -51,7 +51,6 @@ body {
     opacity: 0; /* Awalnya diatur menjadi tidak terlihat */
     transition: opacity 0.5s ease, transform 0.5s ease; /* Efek transisi untuk membuat animasi lebih halus */
 }
-
 
 .carousel-item.active .caption{
     opacity: 0;
