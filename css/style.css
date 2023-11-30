@@ -137,3 +137,15 @@ body {
     bottom: 7px;
     transition-delay: 0.25s;
 }
+
+.overlay {
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 9999;
+}
+
+.overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
