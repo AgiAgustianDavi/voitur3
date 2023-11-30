@@ -21,3 +21,13 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    const readMoreButtons = document.querySelectorAll('.btn.btn-warning.btn-sm');
+    readMoreButtons.forEach(function (button) {
+        button.addEventListener('click', function (event) {
+            event.target.style.backgroundColor = 'grey';
+            event.target.innerHTML = 'visited';
+        });
+    });
+});
