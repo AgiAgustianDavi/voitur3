@@ -2,28 +2,29 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Aston Martin</title>
-    <!-- bootstrap  -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Ferarri</title>
+	<!-- bootstrap  -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
-    <!-- bootstrap icon  -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+	<!-- bootstrap icon  -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
 
-    <!-- local css  -->
-    <link rel="stylesheet" href="css/styleCars.css">
+	<!-- local css  -->
+	<link rel="stylesheet" href="css/styleCars.css">
 
-    <!-- font-family  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<!-- font-family  -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Monomaniac+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Monomaniac+One&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <!-- navbar  -->
-    <nav class="navbar navbar-expand-lg bg-transparent sticky-top" data-bs-theme="dark" id="mainNavbar">
+	<!-- navbar  -->
+	<nav class="navbar navbar-expand-lg bg-transparent sticky-top" data-bs-theme="dark" id="mainNavbar">
         <div class="container">
             <a class="navbar-brand p-0 m-0 fs-2 fw-bold text-warning" href="#">VOITUR3</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -63,86 +64,304 @@
             </div>
         </div>
     </nav>
-    <!-- navbar end  -->
+	<!-- navbar end  -->
 
-    <!-- slider -->
-    <section class="slide-container">
-        <div class="slider">
-            <div id="carouselExampleCaptions" class="carousel slide carousel-fade">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
-                        aria-label="Slide 4"></button>
+	<!-- slider -->
+	<section class="slide-container">
+		<div class="slider">
+			<div id="carouselExampleCaptions" class="carousel slide carousel-fade">
+				<div class="carousel-indicators">
+					<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+						aria-current="true" aria-label="Slide 1"></button>
+					<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+						aria-label="Slide 2"></button>
+					<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+						aria-label="Slide 3"></button>
+					<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+						aria-label="Slide 4"></button>
+				</div>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="assets/astonmartin-db11.jpg" class="d-block w-100" alt="...">
+						<div class="caption-top"><span>Aston Martin DB11</span></div>
+                                                <div class="carousel-caption d-flex flex-column align-items-end">
+                                                        <div><span>A symphony of <br> elegance and power</span></div>
+                                                        <button type="button" class="btn btn-outline-light" onclick="tampilStats('cars-1')">Details</button>
+                                                </div>
+					</div>
+					<div class="carousel-item">
+						<img src="assets/astonmartin-vantage.jpg" class="d-block w-100" alt="...">
+						<div class="caption-top"><span>Aston Martin Vantage</span></div>
+                                                <div class="carousel-caption d-flex flex-column align-items-end">
+                                                        <div><span>Harmonious dance <br> of speed and style</span></div>
+                                                        <button type="button" class="btn btn-outline-light" onclick="tampilStats('cars-2')">Details</button>
+                                                </div>					
+					</div>
+					<div class="carousel-item">
+						<img src="assets/astonmartin-dbs-superleggera.jpg" class="d-block w-100" alt="...">
+						<div class="caption-top"><span>Aston Martin DBS Superleggera</span></div>
+                                                <div class="carousel-caption d-flex flex-column align-items-end">
+                                                        <div><span>Exquisite design <br> meets breathtaking <br> performance</span></div>
+                                                        <button type="button" class="btn btn-outline-light" onclick="tampilStats('cars-3')">Details</button>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img src="assets/astonmartin-valkyrie.jpg" class="d-block w-100" alt="...">
+                                                <div class="caption-top"><span>Aston Martin Valkyrie</span></div>
+                                                <div class="carousel-caption d-flex flex-column align-items-end">
+                                                        <div><span>A manifestation of <br> automotive dreams</span></div>
+                                                        <button type="button" class="btn btn-outline-light" onclick="tampilStats('cars-4')">Details</button>
+						</div>
+					</div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+					data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+					data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+		</div>
+	</section>
+	<!-- slider end  -->
+
+        <section class="car-stats" id="cars-1">
+                <div class="stats d-flex flex-row justify-content-center">
+                        <div>
+                                <h1 class="counter" data-target="322" data-speed="2">0</h1>
+                                <h1>Km/h</h1>
+                                <h5>Max Speed</h5>
+                        </div>
+                        <div>
+                                <h1 class="counter" data-target="3.8" data-speed="0.5">0</h1>
+                                <h1>Sec</h1>
+                                <h5>Acceleration</h5>
+                        </div>
+                        <div>
+                                <h1 class="counter" data-target="528" data-speed="4">0</h1>
+                                <h1>hp</h1>
+                                <h5>Horsepower</h5>
+                        </div>
                 </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="assets/astonmartin-db11.jpg" class="d-block w-100" alt="...">
-                        <div class="caption"><span>Aston Martin DB11</span></div>
-                        <div class="details">
-                            <div><span>$220086</span>Price</div>
-                            <div><span>322Km/h</span>Max Speed</div>
-                            <div><span>3.8Sec</span>Acceleration</div>
-                            <div><span>528</span>Horsepower</div>
+                <table class="table table-dark">
+                        <thead>
+                          <tr>
+                            <th scope="col" colspan="2">Specification</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Engine</td>
+                            <td>twin-turbo V12</td>
+                          </tr>
+                          <tr>
+                            <td>Displacement</td>
+                            <td>5.2 l (317 ci)</td>
+                          </tr>
+                          <tr>
+                            <td>Power</td>
+                            <td>608 ps (600 bhp/447 kw)</td>
+                          </tr>
+                           <tr>
+                            <td>Torque</td>
+                            <td>700 Nm (516 lb-ft)</td>
+                          </tr>
+                          <tr>
+                            <td>Power/liter</td>
+                            <td>117 ps (115 hp)</td>
+                          </tr>
+                          <tr>
+                            <td>Transmission</td>
+                            <td>8-speed auto ZF</td>
+                          </tr>
+                          <tr>
+                            <td>Layout</td>
+                            <td>front engine, rear wheel drive</td>
+                          </tr>
+                        </tbody>
+                      </table>
+        </section>
+        <section class="car-stats" id="cars-2">
+                <div class="stats d-flex flex-row justify-content-center">
+                        <div>
+                                <h1 class="counter" data-target="273" data-speed="2">0</h1>
+                                <h1>Km/h</h1>
+                                <h5>Max Speed</h5>
                         </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="assets/astonmartin-vantage.jpg" class="d-block w-100" alt="...">
-                        <div class="caption"><span>Aston Martin Vantage</span></div>
-                        <div class="details">
-                            <div><span>$146986</span>Price</div>
-                            <div><span>273Km/h</span>Max Speed</div>
-                            <div><span>3.6Sec</span>Acceleration</div>
-                            <div><span>690</span>Horsepower</div>
+                        <div>
+                                <h1 class="counter" data-target="3.6" data-speed="0.5">0</h1>
+                                <h1>Sec</h1>
+                                <h5>Acceleration</h5>
                         </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="assets/astonmartin-dbs-superleggera.jpg" class="d-block w-100" alt="...">
-                        <div class="caption"><span>Aston Martin DBS Superleggera</span></div>
-                        <div class="details">
-                            <div><span>$333686</span>Price</div>
-                            <div><span>340Km/h</span>Max Speed</div>
-                            <div><span>3.4Sec</span>Acceleration</div>
-                            <div><span>715</span>Horsepower</div>
+                        <div>
+                                <h1 class="counter" data-target="690" data-speed="4">0</h1>
+                                <h1>hp</h1>
+                                <h5>Horsepower</h5>
                         </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="assets/astonmartin-valkyrie.jpg" class="d-block w-100" alt="...">
-                        <div class="caption"><span>Aston Martin Valkyrie</span></div>
-                        <div class="details">
-                            <div><span>$3500000</span>Price</div>
-                            <div><span>402Km/h</span>Max Speed</div>
-                            <div><span>2.5Sec</span>Acceleration</div>
-                            <div><span>1139</span>Horsepower</div>
-                        </div>
-                    </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </div>
-    </section>
-    <!-- slider end  -->
+                <table class="table table-dark">
+                        <thead>
+                          <tr>
+                            <th scope="col" colspan="2">Specification</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Engine</td>
+                            <td>V8 DOHC Twin Turbo</td>
+                          </tr>
+                          <tr>
+                            <td>Displacement</td>
+                            <td>4.0 l (244 ci)</td>
+                          </tr>
+                          <tr>
+                            <td>Power</td>
+                            <td>510 ps (503 bhp/375 kw) @ 6000 rpm</td>
+                          </tr>
+                           <tr>
+                            <td>Torque</td>
+                            <td>696 Nm (513 lb-ft) @ 2000 rpm</td>
+                          </tr>
+                          <tr>
+                            <td>Power/liter</td>
+                            <td>127 ps (126 hp)</td>
+                          </tr>
+                          <tr>
+                            <td>Transmission</td>
+                            <td>8-speed ZF automatic</td>
+                          </tr>
+                          <tr>
+                            <td>Layout</td>
+                            <td>front engine, rear wheel drive</td>
+                          </tr>
+                        </tbody>
+                      </table>
+        </section>
+        <section class="car-stats" id="cars-3">
+                <div class="stats d-flex flex-row justify-content-center">
+                        <div>
+                                <h1 class="counter" data-target="340" data-speed="2">0</h1>
+                                <h1>Km/h</h1>
+                                <h5>Max Speed</h5>
+                        </div>
+                        <div>
+                                <h1 class="counter" data-target="3.4" data-speed="0.5">0</h1>
+                                <h1>Sec</h1>
+                                <h5>Acceleration</h5>
+                        </div>
+                        <div>
+                                <h1 class="counter" data-target="715" data-speed="4">0</h1>
+                                <h1>hp</h1>
+                                <h5>Horsepower</h5>
+                        </div>
+                </div>
+                <table class="table table-dark">
+                        <thead>
+                          <tr>
+                            <th scope="col" colspan="2">Specification</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Engine</td>
+                            <td>t48 valve, twin-turbo, V12</td>
+                          </tr>
+                          <tr>
+                            <td>Displacement</td>
+                            <td>5.2 l (238 ci/3902 cc)</td>
+                          </tr>
+                          <tr>
+                            <td>Power</td>
+                            <td>725 ps (715 bhp/533 kw) @ 6500 rpm</td>
+                          </tr>
+                           <tr>
+                            <td>Torque</td>
+                            <td>900 Nm 664 lb-ft) @ 1800 rpm</td>
+                          </tr>
+                          <tr>
+                            <td>Power/liter</td>
+                            <td>139 ps (137 hp)</td>
+                          </tr>
+                          <tr>
+                            <td>Transmission</td>
+                            <td>Rear mid-mounted ZF 8-speed automatic</td>
+                          </tr>
+                          <tr>
+                            <td>Layout</td>
+                            <td>front engine, rear wheel drive</td>
+                          </tr>
+                        </tbody>
+                      </table>
+        </section>
+        <section class="car-stats" id="cars-4">
+                <div class="stats d-flex flex-row justify-content-center">
+                        <div>
+                                <h1 class="counter" data-target="402" data-speed="2">0</h1>
+                                <h1>Km/h</h1>
+                                <h5>Max Speed</h5>
+                        </div>
+                        <div>
+                                <h1 class="counter" data-target="2.5" data-speed="0.5">0</h1>
+                                <h1>Sec</h1>
+                                <h5>Acceleration</h5>
+                        </div>
+                        <div>
+                                <h1 class="counter" data-target="1139" data-speed="4">0</h1>
+                                <h1>hp</h1>
+                                <h5>Horsepower</h5>
+                        </div>
+                </div>
+                <table class="table table-dark">
+                        <thead>
+                          <tr>
+                            <th scope="col" colspan="2">Specification</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Engine</td>
+                            <td>6.5 litre Cosworth naturally-aspirated V12, 1 electric motor</td>
+                          </tr>
+                          <tr>
+                            <td>Displacement</td>
+                            <td>6.5 l (397 ci)</td>
+                          </tr>
+                          <tr>
+                            <td>Power</td>
+                            <td>1176 ps (1160 bhp/865 kw) @ 10500 rpm</td>
+                          </tr>
+                           <tr>
+                            <td>Torque</td>
+                            <td>900 Nm (664 lb-ft)</td>
+                          </tr>
+                          <tr>
+                            <td>Power/liter</td>
+                            <td>181 ps (178 hp)</td>
+                          </tr>
+                          <tr>
+                            <td>Transmission</td>
+                            <td>7 speed dual clutch</td>
+                          </tr>
+                          <tr>
+                            <td>Layout</td>
+                            <td>middle engine, rear wheel drive</td>
+                          </tr>
+                        </tbody>
+                      </table>
+        </section>
 
-    <!-- script bootstrap  -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+	<!-- script bootstrap  -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+		crossorigin="anonymous"></script>
 
-    <!-- local script  -->
+	<!-- local script  -->
     <script src="js/navbar.js"></script>
+    <script src="js/cars.js"></script>
 </body>
 
 </html>

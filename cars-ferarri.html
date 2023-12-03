@@ -18,6 +18,7 @@
 	<!-- font-family  -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet"> 
 	<link href="https://fonts.googleapis.com/css2?family=Monomaniac+One&display=swap" rel="stylesheet">
 </head>
 
@@ -82,42 +83,34 @@
 				<div class="carousel-inner">
 					<div class="carousel-item active">
 						<img src="assets/ferarri-488.jpg" class="d-block w-100" alt="...">
-						<div class="caption"><span>Ferarri 488</span></div>
-						<div class="details">
-							<div><span>$331000</span>Price</div>
-							<div><span>340Km/h</span>Max Speed</div>
-							<div><span>3.0Sec</span>Acceleration</div>
-							<div><span>720</span>Horsepower</div>
-						</div>
+						<div class="caption-top"><span>Ferarri 488</span></div>
+                                                <div class="carousel-caption d-flex flex-column align-items-end">
+                                                        <div><span>Where speed <br> meets elegance</span></div>
+                                                        <button type="button" class="btn btn-outline-light" onclick="tampilStats('cars-1')">Details</button>
+                                                </div>
 					</div>
 					<div class="carousel-item">
 						<img src="assets/ferarri-f8-tributo.jpg" class="d-block w-100" alt="...">
-						<div class="caption"><span>Ferarri F8 Tributo</span></div>
-						<div class="details">
-							<div><span>$330000</span>Price</div>
-							<div><span>340Km/h</span>Max Speed</div>
-							<div><span>2.9Sec</span>Acceleration</div>
-							<div><span>710</span>Horsepower</div>
-						</div>
+						<div class="caption-top"><span>Ferarri F8 Tributo</span></div>
+                                                <div class="carousel-caption d-flex flex-column align-items-end">
+                                                        <div><span>Existence <br> beyond limits</span></div>
+                                                        <button type="button" class="btn btn-outline-light" onclick="tampilStats('cars-2')">Details</button>
+                                                </div>					
 					</div>
 					<div class="carousel-item">
 						<img src="assets/ferarri-portofino.jpg" class="d-block w-100" alt="...">
-						<div class="caption"><span>Ferarri Portofino</span></div>
-						<div class="details">
-							<div><span>$250052</span>Price</div>
-							<div><span>320Km/h</span>Max Speed</div>
-							<div><span>3.5Sec</span>Acceleration</div>
-							<div><span>612</span>Horsepower</div>
+						<div class="caption-top"><span>Ferarri Portofino</span></div>
+                                                <div class="carousel-caption d-flex flex-column align-items-end">
+                                                        <div><span>Journey where <br>luxury meets <br> the open road</span></div>
+                                                        <button type="button" class="btn btn-outline-light" onclick="tampilStats('cars-3')">Details</button>
 						</div>
 					</div>
 					<div class="carousel-item">
 						<img src="assets/ferarri-sf90-stradale.jpg" class="d-block w-100" alt="...">
-						<div class="caption"><span>Ferarri SF90 Stradale</span></div>
-						<div class="details">
-							<div><span>$530000</span>Price</div>
-							<div><span>340Km/h</span>Max Speed</div>
-							<div><span>2.5Sec</span>Acceleration</div>
-							<div><span>986</span>Horsepower</div>
+                                                <div class="caption-top"><span>Ferarri SF90 Stradale</span></div>
+                                                <div class="carousel-caption d-flex flex-column align-items-end">
+                                                        <div><span>Unleashing <br> the future <br> of performance</span></div>
+                                                        <button type="button" class="btn btn-outline-light" onclick="tampilStats('cars-4')">Details</button>
 						</div>
 					</div>
 				</div>
@@ -136,6 +129,231 @@
 	</section>
 	<!-- slider end  -->
 
+        <section class="car-stats" id="cars-1">
+                <div class="stats d-flex flex-row justify-content-center">
+                        <div>
+                                <h1 class="counter" data-target="340" data-speed="2">0</h1>
+                                <h1>Km/h</h1>
+                                <h5>Max Speed</h5>
+                        </div>
+                        <div>
+                                <h1 class="counter" data-target="3.0" data-speed="0.5">0</h1>
+                                <h1>Sec</h1>
+                                <h5>Acceleration</h5>
+                        </div>
+                        <div>
+                                <h1 class="counter" data-target="720" data-speed="4">0</h1>
+                                <h1>hp</h1>
+                                <h5>Horsepower</h5>
+                        </div>
+                </div>
+                <table class="table table-dark">
+                        <thead>
+                          <tr>
+                            <th scope="col" colspan="2">Specification</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Engine</td>
+                            <td>twin-turbocharged 32 valve V8</td>
+                          </tr>
+                          <tr>
+                            <td>Displacement</td>
+                            <td>3.9 l (238 ci/3902 cc)</td>
+                          </tr>
+                          <tr>
+                            <td>Power</td>
+                            <td>720 ps (710 bhp/530 kw) @ 8000 rpm</td>
+                          </tr>
+                           <tr>
+                            <td>Torque</td>
+                            <td>770 Nm (568 lb-ft) @ 3000 rpm</td>
+                          </tr>
+                          <tr>
+                            <td>Power/liter</td>
+                            <td>185 ps (182 hp)</td>
+                          </tr>
+                          <tr>
+                            <td>Transmission</td>
+                            <td>7 speed dual clutch automatic</td>
+                          </tr>
+                          <tr>
+                            <td>Layout</td>
+                            <td>middle engine, rear wheel drive</td>
+                          </tr>
+                        </tbody>
+                      </table>
+        </section>
+        <section class="car-stats" id="cars-2">
+                <div class="stats d-flex flex-row justify-content-center">
+                        <div>
+                                <h1 class="counter" data-target="340" data-speed="2">0</h1>
+                                <h1>Km/h</h1>
+                                <h5>Max Speed</h5>
+                        </div>
+                        <div>
+                                <h1 class="counter" data-target="2.9" data-speed="0.5">0</h1>
+                                <h1>Sec</h1>
+                                <h5>Acceleration</h5>
+                        </div>
+                        <div>
+                                <h1 class="counter" data-target="710" data-speed="4">0</h1>
+                                <h1>hp</h1>
+                                <h5>Horsepower</h5>
+                        </div>
+                </div>
+                <table class="table table-dark">
+                        <thead>
+                          <tr>
+                            <th scope="col" colspan="2">Specification</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Engine</td>
+                            <td>twin turbo V8</td>
+                          </tr>
+                          <tr>
+                            <td>Displacement</td>
+                            <td>3.9 l (238 ci/3902 cc)</td>
+                          </tr>
+                          <tr>
+                            <td>Power</td>
+                            <td>720 ps (710 bhp/530 kw) @ 8000 rpm</td>
+                          </tr>
+                           <tr>
+                            <td>Torque</td>
+                            <td>770 Nm (568 lb-ft) @ 3000 rpm</td>
+                          </tr>
+                          <tr>
+                            <td>Power/liter</td>
+                            <td>185 ps (182 hp)</td>
+                          </tr>
+                          <tr>
+                            <td>Transmission</td>
+                            <td>7 speed dual clutch automatic</td>
+                          </tr>
+                          <tr>
+                            <td>Layout</td>
+                            <td>middle engine, rear wheel drive</td>
+                          </tr>
+                        </tbody>
+                      </table>
+        </section>
+        <section class="car-stats" id="cars-3">
+                <div class="stats d-flex flex-row justify-content-center">
+                        <div>
+                                <h1 class="counter" data-target="320" data-speed="2">0</h1>
+                                <h1>Km/h</h1>
+                                <h5>Max Speed</h5>
+                        </div>
+                        <div>
+                                <h1 class="counter" data-target="3.5" data-speed="0.5">0</h1>
+                                <h1>Sec</h1>
+                                <h5>Acceleration</h5>
+                        </div>
+                        <div>
+                                <h1 class="counter" data-target="612" data-speed="4">0</h1>
+                                <h1>hp</h1>
+                                <h5>Horsepower</h5>
+                        </div>
+                </div>
+                <table class="table table-dark">
+                        <thead>
+                          <tr>
+                            <th scope="col" colspan="2">Specification</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Engine</td>
+                            <td>twin-turbocharged 32 valve V8</td>
+                          </tr>
+                          <tr>
+                            <td>Displacement</td>
+                            <td>3.9 l (235 ci/3855 cc)</td>
+                          </tr>
+                          <tr>
+                            <td>Power</td>
+                            <td>600 ps (592 bhp/441 kw) @ 7500 rpm</td>
+                          </tr>
+                           <tr>
+                            <td>Torque</td>
+                            <td>760 Nm (561 lb-ft) @ 3000 rpm</td>
+                          </tr>
+                          <tr>
+                            <td>Power/liter</td>
+                            <td>156 ps (154 hp)</td>
+                          </tr>
+                          <tr>
+                            <td>Transmission</td>
+                            <td>7 speed dual clutch automatic</td>
+                          </tr>
+                          <tr>
+                            <td>Layout</td>
+                            <td>middle engine, rear wheel drive</td>
+                          </tr>
+                        </tbody>
+                      </table>
+        </section>
+        <section class="car-stats" id="cars-4">
+                <div class="stats d-flex flex-row justify-content-center">
+                        <div>
+                                <h1 class="counter" data-target="340" data-speed="2">0</h1>
+                                <h1>Km/h</h1>
+                                <h5>Max Speed</h5>
+                        </div>
+                        <div>
+                                <h1 class="counter" data-target="2.5" data-speed="0.5">0</h1>
+                                <h1>Sec</h1>
+                                <h5>Acceleration</h5>
+                        </div>
+                        <div>
+                                <h1 class="counter" data-target="986" data-speed="4">0</h1>
+                                <h1>hp</h1>
+                                <h5>Horsepower</h5>
+                        </div>
+                </div>
+                <table class="table table-dark">
+                        <thead>
+                          <tr>
+                            <th scope="col" colspan="2">Specification</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Engine</td>
+                            <td>twin-turbocharged 32 valve V8</td>
+                          </tr>
+                          <tr>
+                            <td>Displacement</td>
+                            <td>4.0 l (244 ci)</td>
+                          </tr>
+                          <tr>
+                            <td>Power</td>
+                            <td>100 ps (986 bhp/735 kw)</td>
+                          </tr>
+                           <tr>
+                            <td>Torque</td>
+                            <td>800 Nm (590 lb-ft)</td>
+                          </tr>
+                          <tr>
+                            <td>Power/liter</td>
+                            <td>250 ps (246 hp)</td>
+                          </tr>
+                          <tr>
+                            <td>Transmission</td>
+                            <td>8 speed dual clutch automatic</td>
+                          </tr>
+                          <tr>
+                            <td>Layout</td>
+                            <td>middle engine, all wheel drive</td>
+                          </tr>
+                        </tbody>
+                      </table>
+        </section>
+
 	<!-- script bootstrap  -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
@@ -143,6 +361,7 @@
 
 	<!-- local script  -->
     <script src="js/navbar.js"></script>
+    <script src="js/cars.js"></script>
 </body>
 
 </html>
