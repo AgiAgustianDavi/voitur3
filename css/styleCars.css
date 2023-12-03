@@ -1,6 +1,6 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&display=swap'); */
 
-*{
+* {
     font-family: 'Monomaniac One', sans-serif;
 }
 
@@ -18,7 +18,7 @@ body {
 }
 
 .slide-container {
-        position: relative;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,10 +27,10 @@ body {
 }
 
 .slider {
-    position: absolute;
-    width: 940px;
+    /* position: absolute; */
+    /* width: 940px; */
     top: 3%;
-    height: 520px;
+    /* height: 520px; */
     overflow: hidden;
     border: 1px solid var(--text-color);
     border-radius: 30px;
@@ -40,16 +40,16 @@ body {
 
 .caption-top {
     position: absolute;
-    width: 100%;
+    width: auto;
     color: var(--text-color);
     font-weight: 600;
-    font-size: 35px;
+    font-size: 5vw;
     letter-spacing: 8px;
     top: 5%;
     left: 5%;
     text-shadow: 0 0 3px var(--bg-color);
-    opacity: 0; 
-    transition: opacity 0.5s ease, transform 0.5s ease; 
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .caption-top .btn {
@@ -63,16 +63,17 @@ body {
     text-shadow: 0 0 3px var(--text-color);
 }
 
-.carousel-item.active .caption-top{
+.carousel-item.active .caption-top {
     opacity: 0;
     animation: fadeInLeft 0.7s forwards 1;
 }
 
 @keyframes fadeInLeft {
-    from  {
+    from {
         opacity: 0;
         transform: translateX(-20px);
     }
+
     to {
         opacity: 1;
         transform: translateX(0);
@@ -87,6 +88,7 @@ body {
 
 .carousel-caption .btn {
     margin-right: 8%;
+    font-size: 3vw;
 }
 
 .carousel-item.active .carousel-caption {
@@ -100,6 +102,7 @@ body {
         opacity: 0;
         transform: translateY(20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -108,66 +111,68 @@ body {
 
 .carousel-caption::before {
     width: 100%;
-    animation: fadeInUp 0.5s ease; /* Menggunakan animasi CSS pada keyframes */
+    animation: fadeInUp 0.5s ease;
+    /* Menggunakan animasi CSS pada keyframes */
 }
 
 .carousel-caption div {
-padding: 5px;
-font-size: 15px;
+    padding: 5px;
+    font-size: 3vw;
     color: var(--text-color);
-text-shadow: 0 0 2px var(--bg-color);
-    }      
+    text-shadow: 0 0 2px var(--bg-color);
+}
 
 .carousel-caption span {
     display: block;
     padding: 5px;
-    font-size: 25px;
+    font-size: 3vw;
     letter-spacing: 2px;
     text-align: right;
     font-weight: 500;
     font-family: 'Parisienne', cursive;
-    }
+}
 
-    .car-stats {
-            padding: 5em 1em;
-            display: none;
-    }
-    
-    .stats {
-            text-align: center;
-            max-width: 800px;
-            margin: 0 auto;
-    }
+.car-stats {
+    padding: 5em 1em;
+    display: none;
+}
 
-    .stats > div {
-            margin-bottom: 1em;
-            position: relative;
-            min-width: 10em;
-    }
-    
-    .stats > div h1:nth-child(2) {
-            color: var(--second-bg-color);
-            position: absolute;
-            top: 30%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            z-index: -1;
-            font-size: 2.5em;
-            font-weight: 700;
-    }
+.stats {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
 
-    .stats h5 {
-            font-weight: 400;
-            text-transform: uppercase;
-            font-size: 0.7em;
-    }
-    .counter {
-            margin: 0.1em 0;
-            color: var(--text-color);
-    }
+.stats>div {
+    margin-bottom: 1em;
+    position: relative;
+    min-width: 10em;
+}
 
-    .table {
-            max-width: 80%;
-           margin-left: 10%;
-           margin-right: 10%;
-    }
+.stats>div h1:nth-child(2) {
+    color: var(--second-bg-color);
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+.stats h5 {
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 0.7em;
+}
+
+.counter {
+    margin: 0.1em 0;
+    color: var(--text-color);
+}
+
+.table {
+    max-width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
