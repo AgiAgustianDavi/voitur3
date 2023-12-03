@@ -27,8 +27,17 @@ document.addEventListener('DOMContentLoaded', function () {
             const formSubmittedSuccessfully = true;
             const message = formSubmittedSuccessfully ? 'Pesan Anda berhasil terkirim' : 'Maaf, terdapat kesalahan, coba lagi nanti';
             showFeedbackModal(message, formSubmittedSuccessfully ? 'success' : 'error');
+
+            feedbackModal._element.addEventListener('hidden.bs.modal', function () {
+                if (formSubmittedSuccessfully) {
+                    setTimeout(function() {
+                        location.reload();
+                    }, 500); // Delay 500 milidetik sebelum merefresh halaman
+                }
+            });
         }
     });
+
 
     const messageInput = document.getElementById('message');
     messageInput.addEventListener('input', function () {
