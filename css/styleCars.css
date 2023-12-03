@@ -27,10 +27,10 @@ body {
 }
 
 .slider {
-    /* position: absolute; */
-    /* width: 940px; */
+    position: absolute;
+    width: 940px;
     top: 3%;
-    /* height: 520px; */
+    height: 520px;
     overflow: hidden;
     border: 1px solid var(--text-color);
     border-radius: 30px;
@@ -40,10 +40,10 @@ body {
 
 .caption-top {
     position: absolute;
-    width: auto;
+    width: 100%;
     color: var(--text-color);
     font-weight: 600;
-    font-size: 5vw;
+    font-size: 35px;
     letter-spacing: 8px;
     top: 5%;
     left: 5%;
@@ -88,7 +88,6 @@ body {
 
 .carousel-caption .btn {
     margin-right: 8%;
-    font-size: 3vw;
 }
 
 .carousel-item.active .carousel-caption {
@@ -117,7 +116,7 @@ body {
 
 .carousel-caption div {
     padding: 5px;
-    font-size: 3vw;
+    font-size: 15px;
     color: var(--text-color);
     text-shadow: 0 0 2px var(--bg-color);
 }
@@ -125,7 +124,7 @@ body {
 .carousel-caption span {
     display: block;
     padding: 5px;
-    font-size: 3vw;
+    font-size: 25px;
     letter-spacing: 2px;
     text-align: right;
     font-weight: 500;
