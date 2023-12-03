@@ -32,3 +32,54 @@ function toggleText(key) {
     text.appendChild(newParagraph);
     currentKey = key; // Atur currentKey menjadi key yang sedang ditampilkan
 }
+
+
+const allStar = document.querySelectorAll('.rating .star');
+const ratingValue = document.querySelector('.rating input');
+const resultText = document.getElementById('result');
+
+allStar.forEach((item, idx)=> {
+    item.addEventListener('click', function(){
+        let click = 0;
+        ratingValue.value = idx + 1;
+        console.log(ratingValue.value);
+        allStar.forEach(i=>{
+            i.classList.replace('bxs-star','bx-star' );
+            i.classList.remove('active');
+        });
+
+
+
+        for(let i=0; i<allStar.length; i++){
+            if(i <= idx){
+                allStar[i].classList.replace('bx-star','bxs-star');
+                allStar[i].classList.add('active');
+            }else{
+                allStar[i].style.setProperty('--i',click);
+                click++
+            }
+        }
+        
+        switch (ratingValue.value) {
+            case '1':
+                resultText.textContent = 'Ada masalah hidup apa ??';
+                break;
+            case '2':
+                resultText.textContent = 'Parah kok kasih bintang 2 sih !';
+                break;
+            case '3':
+                resultText.textContent = 'Hemm, kok 3? agak gimana yaa';
+                break;
+            case '4':
+                resultText.textContent = 'Senang dapat bintang 4, udah bagus kok';
+                break;
+            case '5':
+                resultText.textContent = 'Mak, tugas kami bintang 5 mak!! ';
+                break;
+            default:
+                resultText.textContent = '';
+                break;
+        }
+    });
+});
+

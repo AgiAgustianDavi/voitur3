@@ -8,6 +8,9 @@
     --main-color: #7A7A7A;
     --second-color: #B7AFAC;
     --text-color: #F7F5F6;
+    --white: #fff;
+    --yellow: #ffbd13;
+    --shadow: 8px 8px 30px rgba(0,0,0,.05);
 }
 
 body {
@@ -187,7 +190,39 @@ body {
     color:#fff;
 }
 
+.rating .star {
+    cursor: pointer;
+}
 
+.rating .star:hover{
+    transform: scale(1.1);
+}
 
+.rating .star.active {
+    opacity: 0;
+    animation: animate .5s calc(var(--i) * .1s) ease-in-out forwards;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.2);
+    }    
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.scrollToTopBtn {
+    position: fixed;
+    bottom: 5px;
+    right: 20px;
+    cursor: pointer;
+}
 
 
