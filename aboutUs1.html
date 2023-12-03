@@ -1,158 +1,220 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>VOITUR3</title>
+
+    <!-- bootstrap  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- bootstrap icon  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+    <!-- local css  -->
     <link rel="stylesheet" href="css/styleAbout1.css">
+
+    <!-- icon bintang pada rating -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- font-family  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Monomaniac+One&display=swap" rel="stylesheet">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
 </head>
 
 <body>
-    <section class="header" id="header">
-        <div class="nav-bar">
-            <div class="logo">
-                <a href="#">Voitur3</a>
-            </div>
-            <div class="menu" id="menu">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#" class="active">About Us</a></li>
-                    <li class="dropdown">
-                        <a href="#">Cars</a>
-                        <div class="dropdown-content">
-                            <a href="cars-ferarri.html" target="_self">Ferrari</a>
-                            <a href="cars-mclaren.html" target="_self">McLaren</a>
-                            <a href="cars-astonmartin.html" target="_self">Aston Martin</a>
-                            <a href="cars-lamborghini.html" target="_self">Lamborghini</a>
-                            <a href="cars-tesla.html" target="_self">Tesla</a>
-                        </div>
+    <!-- navbar  -->
+    <nav class="navbar navbar-expand-lg bg-transparent sticky-top" data-bs-theme="dark" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand p-0 m-0 fs-2 fw-bold text-warning" href="#">VOITUR3</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse fw-medium" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item ms-3 me-3">
+                        <a class="nav-link " aria-current="page" href="index.html">Home</a>
                     </li>
-                    <li><a href="news.html">Automotive News</a></li>
-                    <li><a href="kontak.html">Contact Us</a></li>
+                    <li class="nav-item ms-3 me-3">
+                        <a class="nav-link active text-warning" href="aboutUs1.html">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown ms-3 me-3">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Cars
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="cars-ferarri.html" target="_self">Ferrari</a></li>
+                            <li><a class="dropdown-item" href="cars-mclaren.html" target="_self">McLaren</a></li>
+                            <li><a class="dropdown-item" href="cars-astonmartin.html" target="_self">Aston Martin</a>
+                            </li>
+                            <li><a class="dropdown-item" href="cars-lamborghini.html" target="_self">Lamborghini</a>
+                            </li>
+                            <li><a class="dropdown-item" href="cars-tesla.html" target="_self">Tesla</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item ms-3 me-3">
+                        <a class="nav-link" href="news.html">Automotive News</a>
+                    </li>
+                    <li class="nav-item ms-3 me-3">
+                        <a class="nav-link" href="kontak.html">Contact Us</a>
+                    </li>
                 </ul>
             </div>
         </div>
-    </section>
+    </nav>
+    <!-- navbar end  -->
 
-    <section class="container-content">
-        <img src="assets/Mobil.jpg">
-        <h1>About Us</h1>
-        <h2>Tentang Kami</h2>
-        <p>
-            Selamat datang di Voitur3! Kami adalah sebuah tim dari sekelompok mahasiswa yang terinspirasi oleh
-            keindahan dan teknologi yang disediakan oleh perusahaan-perusahaan otomotif yang di tuangkan pada
-            mobil - mobil yang dikeluarkannya. Situs web ini adalah hasil upaya kami untuk menyajikan informasi
-            tentang mobil mewah yang diproduksi oleh perusahaan otomotif ternama di dunia. Kami berupaya untuk
-            menghadirkan pengalaman luar bisa dalam menjelajahi proyek website kami yang informatif dan
-            inovatif.
-        </p>
-        <br>
-        <h2>Misi kami</h2>
-        <p>
-            Misi kami sudah jelas dan sederhana, yaitu kami ingin menghargai dan memahami beraneka ragam mobil
-            mewah dari berbagai sudut pandang. Kami meyakini bahwa orang orang memiliki potensi untuk menghargai
-            dan memahami kelebihan dan keindahan dari jenis mobil yang dikeluarkan oleh perusahaan otomotif
-            ternama tersebut.
-        </p>
-        <br>
-        <h2>Berbagai mobil mewah</h2>
-        <p>
-            Pada website ini kami mencakup beberapa jenis mobil mewah yang diproduksi oleh perusahaan otomotif
-            ternama didunia, seperti Ferrary, Lamborghini dan lainnya. Dalam website ini, anda akan menemukan
-            informasi tentang beberapa jenis dan model mobil yang kami pilih.
-        </p>
-        <br>
-        <h2>Tujuan kami</h2>
-        <p>
-            Tujuan kami adalah memberikan informasi yang bersifat inspirasi dan informatif. Kami ingin membantu
-            anda memahami alasan mengapa hal ini di anggap sebagai pencapaian yang luar biasa dalam dunia
-            otomotif.
-            Kami ingin berterima kasih kepada semua pembaca yang telah mendukung kami dalam pengembangan situs
-            web ini. Dukungan anda semua terhadap situs web ini sangat berarti bagi kami agar kami tetap
-            semangat dalam untuk terus melakukan update agar website ini akan menampilkan lebih banyak lagi
-            informasi informasi dalam dunia otomotif.
-            Terimakasih atas kunjungan anda, kami harap anda menemukan informasi yang informatif dan inspiratif
-            dalam setiap halaman website kami.</p>
+    <!-- content  -->
+    <section class="container-fluid text-light">
+        <div class="gambar"></div>
+        <div class="row justify-content-center">
+            <h1 class="text-center fw-bold fs-1 mb-5 text-warning">About Us</h1>
+            <div class="text-center">
+                <button type="button" class="btn btn-outline-light" onclick="toggleText('aboutUs')">Tentang
+                    Kami</button>
+                <button type="button" class="btn btn-outline-light" onclick="toggleText('mission')">Misi kami</button>
+                <button type="button" class="btn btn-outline-light" onclick="toggleText('goals')">Tujuan kami</button>
+            </div>
+            <div class="text col-md-6 text-center mt-3 mb-3 fw-normal fst-normal" id="text"></div>
+        </div>
     </section>
-    <br><br><br>
-    <section class="header-us">
-        <h1>TEAM 3</h1>
-    </section>
-    <section class="container-us">
+    <!-- content end -->
+
+    <!-- team  -->
+    <section class="container-us mb-5">
+        <div class="header-us col-12">
+            <h1 class="text-warning">TEAM 3</h1>
+        </div>
         <div class="box">
             <div class="imgmhs"><img src="assets/agi.jpg"></div>
             <div class="glass" id="satu">
-                <h3>Agi<br><span>01</span></h3>
-                <ul>
-                    <a href="http://Instagram.com/agidavi_8"><i class='bx bxl-instagram'></i></a>
-                    <a href="http://wa.me/6281273837529" ><i class='bx bxl-whatsapp'></i></a>
-                    <a href="mailto:agidavi6@gmail.com" ><i class='bx bx-envelope'></i></a>
-                </ul>
+                <div class="text">
+                    <h3>Agi<br><span>01</span></h3>
+                </div>
+                <div class="link">
+                    <ul>
+                        <a href="http://Instagram.com/agidavi_8" target="_blank"><i class="bi bi-instagram"></i></a>
+                        <a href="http://wa.me/6281273837529" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                        <a href="mailto:agidavi6@gmail.com" target="_blank"><i class="bi bi-envelope-at"></i></a>
+                    </ul>
+                </div>
             </div>
         </div>
 
         <div class="box">
             <div class="imgmhs"><img src="assets/anang.jpg"></div>
             <div class="glass" id="dua">
-                <h3>Anang<br><span>02</span></h3>
-                <ul>
-                    <a href="http://Instagram.com/a.byan12"><i class='bx bxl-instagram'></i></a>
-                    <a href="http://wa.me/6283171699572"><i class='bx bxl-whatsapp'></i></a>
-                    <a href="mailto:anangabiansyah12@gmail.com" ><i class='bx bx-envelope'></i></a>
-                </ul>
+                <div class="text">
+                    <h3>Anang<br><span>02</span></h3>
+                </div>
+                <div class="link">
+                    <ul>
+                        <a href="http://Instagram.com/a.byan12" target="_blank"><i class="bi bi-instagram"></i></a>
+                        <a href="http://wa.me/6283171699572" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                        <a href="mailto:anangabiansyah12@gmail.com" target="_blank"><i
+                                class="bi bi-envelope-at"></i></a>
+                    </ul>
+                </div>
             </div>
         </div>
 
         <div class="box">
             <div class="imgmhs"><img src="assets/audrey.jpg"></div>
             <div class="glass" id="tiga">
-                <h3>Audrey<br><span>03</span></h3>
-                <ul>
-                    <a href="http://Instagram.com/audreyy.rhmi"><i class='bx bxl-instagram'></i></a>
-                    <a href="http://wa.me/62895411202119" ><i class='bx bxl-whatsapp'></i></a>
-                    <a href="mailto:audreyresturahmi@gmail.com" ><i class='bx bx-envelope'></i></a>
-                </ul>
+                <div class="text">
+                    <h3>Audrey<br><span>03</span></h3>
+                </div>
+                <div class="link">
+                    <ul>
+                        <a href="http://Instagram.com/audreyy.rhmi" target="_blank"><i class="bi bi-instagram"></i></a>
+                        <a href="http://wa.me/62895411202119" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                        <a href="mailto:audreyresturahmi@gmail.com" target="_blank"><i
+                                class="bi bi-envelope-at"></i></a>
+                    </ul>
+                </div>
             </div>
         </div>
 
         <div class="box">
             <div class="imgmhs"><img src="assets/herlia.jpg"></div>
             <div class="glass" id="empat">
-                <h3>Herlia<br><span>04</span></h3>
-                <ul>
-                    <a href="http://Instagram.com/hsbilaaa"><i class='bx bxl-instagram'></i></a>
-                    <a href="http://wa.me/6289628998204" ><i class='bx bxl-whatsapp'></i></a>
-                    <a href="mailto:salsabilaherliaadella@gmail.com" ><i class='bx bx-envelope'></i></a>
-                </ul>
+                <div class="text">
+                    <h3>Herlia<br><span>04</span></h3>
+                </div>
+                <div class="link">
+                    <ul>
+                        <a href="http://Instagram.com/hsbilaaa" target="_blank"><i class="bi bi-instagram"></i></a>
+                        <a href="http://wa.me/6289628998204" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                        <a href="mailto:salsabilaherliaadella@gmail.com" target="_blank"><i
+                                class="bi bi-envelope-at"></i></a>
+                    </ul>
+                </div>
             </div>
         </div>
 
         <div class="box">
             <div class="imgmhs"><img src="assets/rafly.jpg"></div>
             <div class="glass" id="lima">
-                <h3>Rafly<br><span>05</span></h3>
-                <ul>
-                    <a href="http://Instagram.com/rafly_prdnaa"><i class='bx bxl-instagram'></i></a>
-                    <a href="http://wa.me/6281358221706"><i class='bx bxl-whatsapp'></i></a>
-                    <a href="mailto:rflyputraraf@gmail.com"><i class='bx bx-envelope'></i></a>
-                </ul>
+                <div class="text">
+                    <h3>Rafly<br><span>05</span></h3>
+                </div>
+                <div class="link">
+                    <ul>
+                        <a href="http://Instagram.com/rafly_prdnaa" target="_blank"><i class="bi bi-instagram"></i></a>
+                        <a href="http://wa.me/6281358221706" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                        <a href="mailto:rflyputraraf@gmail.com" target="_blank"><i class="bi bi-envelope-at"></i></a>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
-    <br><br><br>
-    <footer class="footer">
-        <div class="footer-text">
-            <p>Copyright &copy; 2023 by Voitur3 | All Rights Reserved.</p>
+    <!-- team end  -->
+
+    <!-- rating  -->
+    <section class="container">
+        <div class="text-center mb-5">
+            <h5 class="text-light">Berikan rating anda terhadap website kami!!</h5>
+            <form action="#">
+                <div class="rating text-warning fs-3">
+                    <input type="number" name="rating" hidden>
+                    <i class='bx bx-star star' style="--i: 0;"></i>
+                    <i class='bx bx-star star' style="--i: 1;"></i>
+                    <i class='bx bx-star star' style="--i: 2;"></i>
+                    <i class='bx bx-star star' style="--i: 3;"></i>
+                    <i class='bx bx-star star' style="--i: 4;"></i>
+                </div>
+                <p id="result" class="result text-warning fs-5"></p>
+            </form>
         </div>
-        <div class="footer-iconTop">
-            <a href="#menu"><i class='bx bx-up-arrow-alt'></i></a>
-        </div>
-    </footer>
+    </section>
+    <!-- rating end  -->
+
+    <!-- date & time / scrollToTop  -->
+    <div class="ms-1">
+        <p id="dateTime" class="text-warning"></p>
+        <a onclick="scrollToTop()" class="scrollToTopBtn" style="display: none;">
+            <i class="bi bi-arrow-up-circle fs-3 text-warning"></i>
+        </a>
+    </div>
+    <!-- date & time / scrollToTop end  -->
+
+    <!-- bootstrap script  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <!-- local js  -->
+    <script src="js/aboutUs.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/scrollTop.js"></script>
+    <script src="js/dateTime.js"></script>
 </body>
 
 </html>
